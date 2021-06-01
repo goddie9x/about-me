@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-image: url(../images/milky\ way.png);
+    background-image: url(../images/night-sky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -101,6 +101,12 @@ a {
     display: none;
 }
 
+.main-nav-status {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .main-nav-bar {
     margin: 5px;
     display: inline-flex;
@@ -151,4 +157,50 @@ a {
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+
+.main-nav-bar-about {
+    background-color: rgba(197, 30, 30, 0.8);
+}
+
+
+/*---------------------------------------------FOOTER---------------------------------------------------*/
+
+.footer {
+    display: block;
+    background-color: black;
+}
+
+.copyright {
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(38, 165, 166) 0%, rgb(41, 6, 82) 100%);
+    background-color: initial;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    z-index: 10;
+}
+
+
+/*-------------------------------------------------RESPONSIVE-----------------------------------------------*/
+
+@media (max-width: 768px) {
+    .main-nav-bar {
+        display: none;
+    }
+    .main-nav-bar.active {
+        display: inline-flex;
+        flex-direction: column;
+        min-width: 40px;
+        position: fixed;
+        align-items: flex-end;
+        top: 40px;
+        right: 20px;
+    }
+    .main-nav-status {
+        position: fixed;
+        top: 50px;
+    }
+    .main-nav-moblie {
+        display: block;
+    }
 }
