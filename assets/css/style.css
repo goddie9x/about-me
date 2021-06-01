@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/milky\ way.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*---------------------------------------------USEABLE---------------------------------------------------*/
+
+.container {
+    width: 100vw;
+    height: max-content;
+}
+
+.clear-fixed::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.bar-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.bar-item:active {
+    transform: translate(2%, 2%);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.menu-icon {
+    display: none;
+    width: 30px;
+    margin-right: 30px;
+}
+
+.menu-icon:active {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.active {
+    display: block;
+}
+
+
+/*---------------------------------------------HEADER---------------------------------------------------*/
+
+.header {
+    background-color: rgba(0, 0, 0, .3);
+    color: aliceblue;
+    position: fixed;
+    max-height: 10vh;
+}
+
+.logo {
+    margin: 5px;
+    margin-left: 10px;
+    place-items: 1;
+}
+
+.logo-image {
+    background-image: url(../images/avatar_logo.jpg);
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    background-size: cover;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.logo-image:active {
+    transform: translate(2%, 2%);
+}
+
+.main-nav {
+    width: 100vw;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-nav-moblie {
+    display: none;
+}
+
+.main-nav-bar {
+    margin: 5px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 600px;
+}
+
+.main-nav-bar-item:hover {
+    padding: 10px;
+    background-color: rgba(129, 129, 87, 0.9);
+    border-radius: 5px;
+}
+
+.main-nav-bar-my-cv {
+    margin-left: 10px;
+}
+
+.main-nav-bar-my-schedules {
+    margin-left: 10px;
+}
+
+.main-nav-bar-about {
+    margin-left: 10px;
+}
+
+.main-nav-search {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+}
+
+.main-nav-bar-search {
+    border-radius: 3px;
+    background-color: azure;
+    height: 30px;
+    max-width: 80px;
+    margin-left: 10px;
+}
+
+.main-nav-bar-submit {
+    background-color: azure;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
