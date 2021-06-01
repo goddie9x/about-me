@@ -97,7 +97,7 @@ a {
     justify-content: space-between;
 }
 
-.main-nav-moblie {
+.main-nav-mobile {
     display: none;
 }
 
@@ -200,7 +200,7 @@ a {
         position: fixed;
         top: 50px;
     }
-    .main-nav-moblie {
+    .main-nav-mobile {
         display: block;
     }
 }
