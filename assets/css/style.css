@@ -74,10 +74,18 @@ a:visited {
     max-height: 10vh;
 }
 
+.main-nav {
+    width: 100vw;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .logo {
     margin: 5px;
     margin-left: 10px;
-    place-items: 1;
+    flex-grow: 1;
 }
 
 .logo-image {
@@ -93,15 +101,19 @@ a:visited {
     transform: translate(2%, 2%);
 }
 
-.main-nav {
-    width: 100vw;
+.main-nav-bar {
+    margin: 5px;
+    margin-left: 10vw;
     display: inline-flex;
-    align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 400px;
+    flex-grow: 4;
 }
 
 .main-nav-mobile {
+    flex-grow: 2;
     display: none;
 }
 
@@ -109,15 +121,6 @@ a:visited {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 10px;
     border-radius: 5px;
-}
-
-.main-nav-bar {
-    margin: 5px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    min-width: 600px;
 }
 
 .main-nav-bar-item:hover {
